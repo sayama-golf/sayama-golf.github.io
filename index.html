@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>狭山ゴルフ協会</title>
 
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -30,7 +31,7 @@ header{
     min-height:320px;
 
     background-image:url("header.jpg");
-    background-size:cover;              /* 修正 */
+    background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
 
@@ -58,6 +59,23 @@ header span{
     z-index:2;
     text-shadow:0 4px 12px rgba(0,0,0,0.9);
     padding:10px 20px;
+}
+
+/* ======================
+   Hits Counter
+====================== */
+.counter-wrap{
+    background:#ffffff;
+    text-align:center;
+    padding:14px 10px;
+    border-bottom:1px solid #dcdcdc;
+}
+
+.counter-title{
+    font-size:0.95rem;
+    color:#2e7d32;
+    font-weight:bold;
+    margin-bottom:8px;
 }
 
 /* ======================
@@ -185,10 +203,8 @@ main{
 @media (max-width:768px){
 
 header{
-    min-height:220px;                  /* 高さ不足改善 */
+    min-height:220px;
     font-size:1.7rem;
-    background-size:cover;            /* 修正 */
-    background-position:center center;
 }
 
 main{
@@ -212,15 +228,33 @@ main{
     font-size:0.92rem;
 }
 
+.counter-title{
+    font-size:0.85rem;
+}
+
 }
 </style>
 </head>
 
 <body>
 
+<!-- ヘッダー -->
 <header>
     <span>狭山ゴルフ協会</span>
 </header>
+
+<!-- カウンター（ヘッダー下） -->
+<div class="counter-wrap">
+
+    <div class="counter-title">
+        累計アクセス数
+    </div>
+
+    <!-- URL部分をあなたのGitHub Pages URLへ変更 -->
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fyourname.github.io%2Fyour-repository%2F&count_bg=%232E7D32&title_bg=%23555555&icon=github.svg&icon_color=%23FFFFFF&title=VISITS&edge_flat=false"
+         alt="Hits Counter">
+
+</div>
 
 <main>
 
